@@ -205,10 +205,6 @@ class PictureViewController: UIViewController, UICollectionViewDelegate, UIColle
         case .delete:
             deletedIndexPaths.append(indexPath!)
             
-            let photo = anObject as! Photos
-            if !photo.deletePhotoAtDisk() {
-                fatalError("Failed to delete image!")
-            }
             break
             
         case .update:
